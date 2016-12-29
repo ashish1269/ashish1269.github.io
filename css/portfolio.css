@@ -1,0 +1,169 @@
+*{
+    font-family: times;
+}
+
+body{
+    background-color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+}
+
+div.content{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+div.content:after,
+div.content:before{
+    clear: both;
+    display: inline-block;
+    content: " ";
+}
+
+div.menu{
+    width:200px;
+    float:left;
+    display: inline-block;
+    padding: 0px 0px 50px 0px;
+    background-color: #202020;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 50px;
+    text-transform:uppercase;
+}
+
+div.menu ul{
+    list-style: none;
+    padding: 0px;
+    color: #fff;
+    font-size: 16px;
+}
+
+div.menu ul li{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size:14x;
+    padding: 10px 5px;
+    margin: 0px 10px;
+    border-bottom: 1px solid grey;
+}
+
+div.menu ul li.active{
+    color: #a1a1a1;
+}
+
+div.menu div.social{
+    margin:10px;
+    margin-top : 50px;
+    padding:5px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+div.menu div.social:before,
+div.menu div.social:after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+div.menu div.sites{
+    margin:0px;
+    padding-top: 10px;
+    height: auto;
+}
+
+div.menu div.sites:after,
+div.menu div.sites:before{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+div.menu div.site{
+    float: left;
+    height: 20px;
+    padding: 5px;
+}
+
+div.menu div.site img{
+    float: left;
+    height: 20px;
+    width: auto;
+}
+
+div.main-wrapper{
+    max-width: 800px;
+    background-color: inherit;
+    padding-top: 50px;
+    display: inline-block;
+}
+
+div.intro-name{
+    color:#f39c12;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding: 0px 5px;
+    margin: 0;
+    line-height: 60px;
+}
+
+div.intro-tagline{
+    color:#fff;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 0px 5px;
+    line-height: 40px;
+}
+
+
+div.summary{
+    padding:0px;
+    margin:0px;
+    display: block;
+    padding-top: 20px;
+}
+
+div.summary:after,
+div.summary:before{
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+div.profile-pic{
+    display: inline;
+    float: left;
+    width: 240px;
+    margin: 5px;
+}
+
+div.summary-text{
+    display: inline;
+    float: left;
+    padding: 0px;
+    width: 535px;
+    margin: 0px;
+}
+
+img.profile-pic{
+    float: none;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+blockquote.summary-quote{
+    color: #fff;
+    font-size:25px;
+    font-family: sans-serif;
+}
+
+blockquote.summary-quote s{
+    color:#a1a1a1;
+    font-family: sans-serif;
+}
+
+span.golden-text{
+    color:#f39c12;
+    font-family: sans-serif;
+}

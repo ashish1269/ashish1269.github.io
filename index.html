@@ -9,15 +9,20 @@
     <script type="text/javascript" src="js/portfolio.js"></script>
 </head>
 <body>
+    
+    <div class="drop-button">
+        <span><a href="#"><img src="images/menu.png" alt="menu"></a></span>
+    </div>
+    
     <div class="content">
         <div class="menu">
             <ul class="menu">
-                <li class="active">Home</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Experience</li>
-                <li>Education</li>
-                <li><span class="golden-text">Contact</span></li>
+                <a href=""><li class="active">Home</li></a>
+                <a href=""><li>Projects</li></a>
+                <a href=""><li>Skills</li></a>
+                <a href=""><li>Experience</li></a>
+                <a href=""><li>Education</li></a>
+                <a href=""><li><span class="golden-text">Contact</span></li></a>
             </ul>
             <div class="social">Social
                 <div class="sites">
@@ -32,27 +37,53 @@
     
             <div class="intro-name">MY NAME IS ASHISH TOMER</div>
             <div class="intro-tagline">I CODE AMAZING APPLICATIONS</div>
-            <div class="summary">
-                <div class="profile-pic">
-                    <img src="images/ProfilePic.png" alt="my profile picture" class="profile-pic">
+            <div class="stack">
+                <div class="stack-page visible home">
+                    <div class="profile-pic">
+                        <img src="images/ProfilePic.png" alt="my profile picture" class="profile-pic">
+                    </div>
+                    <div class="home-text">
+                        <blockquote class="home-quote">
+                            I code everyday.
+                            Books are my T.V. and coding is my passion.
+                        </blockquote>
+                        <blockquote class="home-quote">
+                            I am not restricted to one 'end' of development. I love to code presentation and logic both.
+                        </blockquote>
+                        <blockquote class="home-quote">
+                            I am a <s>designer</s> <span class="golden-text">developer</span>.
+                        </blockquote>
+                    </div>
                 </div>
-                <div class="summary-text">
-                    <blockquote class="summary-quote">
-                        I code everyday.
-                        Books are my T.V. and coding is my passion.
-                    </blockquote>
-                    <blockquote class="summary-quote">
-                        I am not restricted to one 'end' of development. I love to code presentation and logic both.
-                    </blockquote>
-                    <blockquote class="summary-quote">
-                        I am a <s>designer</s> <span class="golden-text">developer</span>.
-                    </blockquote>
+
+                <div class="stack-page hidden projects">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="image-wrapper"><img class="project-shot" src="images/clean-exam600px.png"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="image-wrapper"><img class="project-shot" src="images/portfolio600px.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-page hidden skills">
+                    <h2>SKILLS</h2>
+                </div>
+
+                <div class="stack-page experience hidden">
+                    <h2>EXPERIENCE</h2>
+                </div>
+
+                <div class="stack-page education hidden">
+                    <h2>EDUCATION</h2>
+                </div>
+
+                <div class="stack-page contact hidden">
+                    <h2>CONTACT</h2>
                 </div>
             </div>
             
-            <div class="projects">
-                
-            </div>
         </div>
     </div>
 </body>

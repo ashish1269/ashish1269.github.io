@@ -6,22 +6,53 @@ body{
     background-color: #2a2a2a;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+a{
+    text-decoration:none;
+    color  : #fff;
+}
+
+a:hover{
+    color : #41a1a1;
+}
+
+div.drop-button{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 40px;
+    text-align: left;
+    background-color: #3b3b3b;
+    border-bottom:1px solid #4f4f4f;
+    display: block;
+    width: 100%;
+    padding: 0% 2%;
+    line-height: 40px;
+    color: #fff;
+}
+
+div.drop-button img{
+    height: 30px;
+    padding: 5px;
 }
 
 div.content{
-    width: 1000px;
+    width: 80%;
     margin: 0px auto;
 }
 
 div.content:after,
 div.content:before{
-    clear: both;
-    display: inline-block;
     content: " ";
+    clear: both;
+    display: block;
 }
 
 div.menu{
-    width:200px;
+    width:20%;
     float:left;
     display: inline-block;
     padding: 0px 0px 50px 0px;
@@ -50,6 +81,11 @@ div.menu ul li{
 
 div.menu ul li.active{
     color: #a1a1a1;
+}
+
+div.menu ul li span.golden-text:hover,
+div.menu ul li.active:hover{
+    color: aquamarine;
 }
 
 div.menu div.social{
@@ -93,10 +129,11 @@ div.menu div.site img{
 }
 
 div.main-wrapper{
-    max-width: 800px;
+    width: 80%;
+    float: left;
     background-color: inherit;
-    padding-top: 50px;
-    display: inline-block;
+    margin-top: 40px;
+    display: block;
 }
 
 div.intro-name{
@@ -117,15 +154,15 @@ div.intro-tagline{
 }
 
 
-div.summary{
+div.home{
     padding:0px;
     margin:0px;
     display: block;
     padding-top: 20px;
 }
 
-div.summary:after,
-div.summary:before{
+div.home:after,
+div.home:before{
     display: block;
     clear: both;
     content: " ";
@@ -134,31 +171,33 @@ div.summary:before{
 div.profile-pic{
     display: inline;
     float: left;
-    width: 240px;
-    margin: 5px;
+    width: 25%;
 }
 
-div.summary-text{
+div.home-text{
     display: inline;
     float: left;
     padding: 0px;
-    width: 535px;
+    width: 75%;
     margin: 0px;
 }
 
 img.profile-pic{
     float: none;
     margin: 0px auto;
-    padding: 0px;
+    padding: 5px;
+    width: 100%;
 }
 
-blockquote.summary-quote{
+blockquote.home-quote{
     color: #fff;
     font-size:25px;
     font-family: sans-serif;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-blockquote.summary-quote s{
+blockquote.home-quote s{
     color:#a1a1a1;
     font-family: sans-serif;
 }
@@ -166,4 +205,194 @@ blockquote.summary-quote s{
 span.golden-text{
     color:#f39c12;
     font-family: sans-serif;
+}
+
+/* I want to create a stack of div's (one div over other)  The best possible solution I could found is this 
+But making children absolute push them out of flow
+Though they are still stick to top-left corner (one above 
+other) but the problem is the parent should encapsulate them inside it.
+
+Solution : Giving the height of the parent equal to or
+greater than the heighest child, but I don't know the height of child in advance. So I set the max-height of all children blocks equal to height of parent and set the overflow property of each child.*/
+
+div.stack{
+    display: block;
+    background-color: #2a2a2a;
+}
+
+/* padding: 0; -> Important! Else child may escape parent*/
+
+div.stack-page{
+    position: relative;
+    float: left;
+    background-color: #2a2a2a;
+    display: block;
+    width:100%;
+}
+
+div.stack-page.visible{
+    opacity: 1;
+}
+
+div.stack-page.hidden{
+    opacity: 0;
+    display: none;
+}
+
+div.row{
+    padding:0px;
+    margin:0px;
+    width: 100%;
+    display: block;
+}
+
+div.row:before,
+div.row:after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+div.col-2{
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+div.image-wrapper{
+    padding: 5px;
+    margin: 5px;
+    border:1px solid #3f3f3f;
+}
+
+img.project-shot{
+    width:100%;
+}
+
+@media screen and (min-width:220px) {
+    div.menu {
+        width: 200px;
+        display:none;
+        margin-top: 45px;
+        margin-left: 10px;
+        position: fixed;
+        z-index: 9;
+        left:0;
+        top:0;
+        box-shadow: 5px 5px 10px #000;
+    }
+    
+    div.menu.responsive {
+        display: block;
+    }
+    
+    div.content {
+        display: block;
+        width: 100%;
+    }
+    div.profile-pic {
+        display: block;
+        clear: right;
+        width:100%;
+    }
+    
+    img.profile-pic {
+        width:90%;
+        padding: 0% 5%;
+    }
+    
+    div.home-text {
+        width: 100%;
+    }
+    
+    div.main-wrapper{
+        width: 100%;
+    }
+    
+    div.intro-name {
+        font-size:2.8em;
+        padding: 0% 3%;
+    }
+    
+    div.intro-tagline{
+        font-size: 2em;
+        padding: 0% 3%;
+    }
+    
+    div.col-2{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    div.profile-pic {
+        display: block;
+        clear: right;
+        width:50%;
+    }
+    
+    div.home-text {
+        width: 50%;
+    }
+    
+    div.col-2 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    div.content{
+        width:100%;
+        margin: 0;
+    }
+    
+    div.main-wrapper {
+        width:80%;
+    }
+    
+    div.drop-button {
+        display: none;
+    }
+    
+    div.menu {
+        display: inline-block;
+        width: 20%;
+        margin: 0;
+        margin-top: 50px;
+        position: static;
+        box-shadow: none;
+    }
+    
+    div.drop-button {
+        //display: none;
+    }
+    
+    div.profile-pic {
+        display: block;
+        clear: right;
+        width:25%;
+        margin: 0px;
+    }
+    
+    div.home-text {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    div.content{
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    div.main-wrapper {
+        width:80%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    div.content{
+        width:80%;
+        margin: 0px auto;
+    }
 }

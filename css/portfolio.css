@@ -336,6 +336,13 @@ div.skill-block img{
     margin-bottom: 10px;
 }
 
+div.footer {
+    min-height:20px;
+    margin-top:20px;
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (min-width:220px) {
     div.menu {
         width: 200px;
@@ -477,3 +484,4 @@ div.skill-block img{
         margin: 0px auto;
     }
 }
+

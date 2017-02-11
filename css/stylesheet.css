@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+div#main-wrapper {
+    width: 640px;
+    margin: 0px auto;
+    padding: 0px;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+ }
+
+header {
+    background-color: #fff;
+    padding: 20px 0px;
+}
+
+
+
+header span {
+    display: block;
+}
+
+header span.main-heading {
+    color : #4f4f4f;
+    font-size : 30px;
+    line-height: 20px;
+    font-weight : bold;
+    margin: 0px;
+}
+
+header span.sub-heading {
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+header span.sub-heading a{
+
+    text-decoration: none;
+    color:#0092ff;
+    font-weight: bold;
+
+}
+
+content.synopsis {
+    font-size: 15px;
+    color: #3e3e3e;
+    line-height: 20px;
+    padding: 0px 0px 15px 0px;
+    display: block;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+content.main-content {
+    margin: 0px;
+    padding: 0px;
+}
+
+content.main-content:before,
+content.main-content:after {
+    content: "";
+}
+div.row {
+    margin: 0px;
+    padding: 10px;
+}
+
+div.row:after,
+div.row:before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div.col-* {
+    display: inline;
+}
+
+div.subject-topic,
+div.statistics{
+    padding-top : 20px;
+}
+
+div.subject-topic {
+    padding-right: 2%;
+}
+
+div.statistics{
+    padding-left: 2%;
+}
+
+div.topic {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+div.topic:before,
+div.topic:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.topic div.topic-body{
+    display: inline-block;
+    float: left;
+    width: 70%
+}
+
+div.topic div.topic-body:before,
+div.topic div.topic-body:after {
+    display: block;
+    float: left;
+    content: "";
+}
+
+div.topic div.topic-status {
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    color: #4f4f4f;
+}
+
+div.topic-head {
+    display: block;
+    font-weight: bold;
+    color: #0092ff;
+    margin-bottom: 3px;
+}
+
+div.topic-number {
+    display: inline-block;
+    float: left;
+    font:
+}
+
+div.topic-number:after {
+    content: ".\00a0"
+}
+
+div.topic-content {
+    color: #2f2f2f;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+div.points-section,
+div.streak-section,
+div.badges-section{
+    padding: 10px 0px;
+}
+
+div.points-section:before,
+div.points-section:after,
+div.streak-section:before,
+div.streak-section:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.points-section div.points-header,
+div.streak-section div.streak-header,
+div.badges-section div.badge-header{
+    font-size : 22px;
+    font-weight: bold;
+    color: #4f4f4f;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+
+div.points-section div.card {
+    min-width: 33.33%;
+    float: left;
+    display: inline-block;
+}
+
+div.points-section div.card div.card-content,
+div.streak-section div.card div.card-content {
+    text-align: center;
+    margin: 5px;
+    background-color: #e3e3e3;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+div.points-section div.card div.card-content div.points ,
+div.streak-section div.card div.card-content div.streak{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color : #4f4f4f;
+}
+
+div.streak-section div.card div.card-content div.streak span.streak-number{
+    font-size : 25px;
+}
+
+div.streak-section div.card div.card-content div.streak span.streak-number:after{
+    content: "\00a0"
+}
+div.points-section div.card div.card-content div.details,
+div.streak-section div.card div.card-content div.details{
+    color: #a1a1a1;
+}
+
+div.streak-section div.card {
+    min-width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+div.streak-appreciation span.appreciation {
+    font-size : 14px;
+    color: #5f5f5f;
+    text-align: center;
+    display: block;
+    padding: 2px;
+}
+
+div.badges-section div.badge-header{
+    display: block;
+    margin-bottom:    10px;
+}
+
+div.badges-section div.badge-header:after,
+div.badges-section div.badge-header:before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div.badges-section div.badge-header div.head {
+    display: inline;
+    float: left;
+}
+
+div.badges-section div.badge-header div.see-all{
+    display: inline;
+    float: right;
+    font-size: 15px;
+    line-height: 30px;
+    color: #0092ff;
+}
+
+div.badges-section div.badge-header div.see-all a {
+    text-decoration: none;
+}
+
+div.badges-section div.badge-header span.total-badges {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+div.badges-section div.badge-header span.total-badges:before {
+    content: "\00a0(";
+}
+
+div.badges-section div.badge-header span.total-badges:after {
+    content: ")\00a0";
+}
+
+div.badges-section div.card {
+    width: 25%;
+    float: left;
+    display: inline-block;
+}
+
+div.card div.card-content div.badge {
+    text-align: center
+}
+
+@media screen and (min-width:320px) {
+    div#main-wrapper {
+        width: auto;
+    }
+
+    div.col-lg-6 {
+        width: 100%;
+        display: block;
+        float: left;
+        clear: left;
+    }
+
+    div.subject-topic {
+        padding:0px;
+    }
+
+    div.statistics{
+        padding: 0px;
+    }
+
+    div.subject-topic {
+        margin-right: 0%;
+    }
+
+    div.statistics{
+        margin-left: 0%;
+    }
+
+}
+
+@media screen and (min-width:640px) {
+    div#main-wrapper {
+    width: 640px;
+    }
+
+    div.col-lg-6 {
+        width: 48%;
+        display: block;
+        float: left;
+        clear: none;
+    }
+
+
+    div.subject-topic {
+        padding-right:2%;
+    }
+
+    div.statistics{
+        padding-left: 2%;
+    }
+}
+
+

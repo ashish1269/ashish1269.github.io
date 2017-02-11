@@ -1,0 +1,233 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header.main-header {
+    padding: 20px;
+    background-color: #1a3333
+}
+
+header.main-header h1.main-heading {
+    color:aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu {
+    height: auto;
+}
+
+nav.menu ul {
+    padding: 10px 0px;
+    margin: 0;
+    background-color: #2fb3f1
+}
+
+nav.menu ul li {
+    display: inline;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+nav.menu ul li:hover{
+    background-color: #2fa3f1;
+    color:#fff;
+}
+
+nav.menu ul a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+div#magic-bar{
+    display: none;
+    height: 2px;
+    background-color:  #fff;
+    margin: 0px;
+    width: 0px;
+    line-height: 2px;
+    position: fixed;
+}
+
+section.submission-section {
+    padding: 50px 20px;
+    display : none;
+}
+
+section.submission-section form{
+    width: 500px;
+    padding: 20px 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+section.submission-section form div{
+
+    padding: 5px;
+
+}
+
+section.submission-section div.registration-head {
+    padding: 20px 20px 20px 4px;
+    font-size: 25px;
+    color: #2e2e2e;
+    font-weight: bolder;
+}
+
+section.submission-section form label {
+    color: #3e3e3e;
+    font-size: 16px;
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+section.submission-section form input[type="text"] {
+    height: 20px;
+    box-shadow:inset 0 0 0px 0px #fff;
+    border-radius: 2px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+
+section.submission-section form button {
+    height: 30px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width:80px;
+    background-color: #2fb3f1;
+    border-radius: 4px;
+}
+
+section text-section {
+    display: none;
+}
+
+p#slide-right{
+    padding: 10px;
+}
+
+p#slide-right.knoldus {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    font-size: 100px;
+    font-weight: bolder;
+    color: darkorange;
+    margin: 0 auto;
+}
+
+p#slide-right.is {
+    animation-name: slidein;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    font-size: 100px;
+    font-weight: bolder;
+    color: orangered;
+    margin: 0 auto;
+}
+
+p#slide-right.awesome {
+    animation-name: slidein;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    font-size: 100px;
+    color: darkred;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+@keyframes slidein {
+    from {
+        color : orangered;
+        margin-left: 100%;
+        width : 300%;
+    }
+    50% {
+        color: darkred;
+        font-size: 75px;
+        margin-top: 25px;
+        -ms-transform: rotate(-10deg); /* IE 9 */
+        -webkit-transform: rotate(-10deg); /* Safari */
+        transform: rotate(-10deg);
+    }
+    75% {
+        margin-left:0%;
+        color: red;
+        width: 100%;
+        -ms-transform: rotate(10deg); /* IE 9 */
+        -webkit-transform: rotate(10deg); /* Safari */
+        transform: rotate(10deg);
+    }
+    to {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari */
+        transform: rotate(0deg);
+    }
+}
+
+
+section.text-section {
+    padding: 25px;
+}
+
+section.text-section p{
+    font-size: 53px;
+    color :cadetblue;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+section.text-section p span {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    animation: rotate-letter 10s linear infinite;
+
+}
+
+section.text-section p span:hover {
+    cursor:move;
+    animation-name: rotate-letter;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+@keyframes rotate-letter {
+    from {
+
+    }
+    50% {
+        color: darkcyan;
+        text-shadow: 5px 5px 5px red
+    }
+    100% {
+        -ms-transform: rotate(1turn); /* IE 9 */
+        -webkit-transform: rotate(1turn); /* Safari */
+        transform: rotate(1turn);
+    }
+}
+

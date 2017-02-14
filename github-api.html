@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Ajax Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/github-api.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row top-bar">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+
+                <label for="basic-url">Enter the Github username</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">Username</span>
+                    <input type="text" class="form-control" id="user-name" aria-describedby="basic-addon3">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary get-details">Go!</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row" id="user-info-section">
+
+            <div class="col-sm-2 user-details">
+                <div></div>
+            </div>
+
+            <div class="col-sm-8 repos">
+            </div>
+
+            <div class="col-sm-2">
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/github-api.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
